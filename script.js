@@ -215,7 +215,13 @@
 
 //FOR EACH METHOD
 
-// let array1 = [20,2,4,5,77,1,2,5,7,8]
+// let array10 = [20,2,4,5,77,1,2,5,7,8]
+// let newArray = []
+//  array10.forEach((val)=>{ 
+//     newArray.push(val)
+     
+// })
+// console.log(newArray);
 
 // let addition = 1
 
@@ -231,7 +237,7 @@
 
 // console.log(addition);
 
-//MAP METHOD
+// MAP METHOD
 
 // let array1 = [20,2,4,5,77,1,2,5,7,8]
 
@@ -427,4 +433,97 @@
 // }
 // newArray1()
 
+// let board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+
+// let exist = (board,word)=>{
+//     let newArray = board.flat()
+
+    // console.log(newArray.indexOf("Z"));
+    // let finedWord =""
+    
+    // for(i=0;i<=word.length;i++){
+        
+    //     let index = newArray.indexOf(word[i])
+    //     // console.log(index);
+    //     if(index >=0){
+    //         finedWord = finedWord+word[i]
+            
+    //     }
+        
+        // let checked = newArray.find(word[i])
+//     }
+//     console.log(finedWord)
+//     if(finedWord == word){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+// let result = exist(board,"ABC")
+
+// console.log(result);
+
+// let string = "ANBU"
+
+// console.log(string[0])
+
+
+// let array1 = [{name:"orange",name1:"Apple",name2:"Pinapple",name3:"grapes",name4:"Olive"}]
+// // let array2 = array1.toLowercase()
+// // console.log(array2);
+
+// console.log(array2.sort());
+
+// let array100 = ["a","1"]
+
+// let a = "1AnbuKannan"
+
+// console.log(a.charCodeAt(3)); 
+// console.log(a.charCodeAt(5)); 
+// console.log(a.charCodeAt(0)); 
+// const months = ['March', 'Jan', 'Feb', 'Dec'];
+// months.sort();
+// console.log(months);
+
+// const array1 = [1, 30, 4, 21, 100000];
+// array1.sort();
+// console.log(array1);
+
+// ARRAY MANUPULATION
+
+// let array10 = ["Anbu",20,"Kannan",1000]
+
+// let index = array10[0]
+
+// let newArray=[]
+
+// for(i=0;i<index.length;i++){
+//     // console.log(array10[i]);
+//     newArray.push(index[i])
+// }
+
+// console.log(newArray.toString());
+
+//STRING METHOD----->TRIM(),SPLIT()
+
+// a=" anbu kannan "
+// let c = a.trim()
+// console.log(c);
+// let b = c.split(" ")
+// console.log(b);
+
+// let s = "Hello World"
+
+// var lengthOfLastWord = function(s) {
+//     let removedSpace =  s.trim()
+//     console.log(removedSpace);
+//     let split = removedSpace.split(" ")
+//     console.log(split);
+//     let lastWord = split[split.length-1]
+//     console.log(lastWord);
+//     return lastWord.length
+     
+//  };
+// console.log(lengthOfLastWord(s));
+ 
 
