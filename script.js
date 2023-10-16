@@ -527,3 +527,48 @@
 // console.log(lengthOfLastWord(s));
  
 
+// CONST Key Word in variables
+
+// var array = [1,2,3,4,5,6]
+
+
+// console.log(array.push(100));
+// console.log(array.push(100));
+// console.log(array);
+
+// const obj = {
+//     name : "Anbu",
+//     place : "pudukkottai"
+// }
+
+// console.log(obj);
+// obj.name = "Kannan"
+// console.log(obj);
+
+// console.log(x);
+
+// let x = 10
+
+
+//NAMASTHE JAVASCRIPT --Experimentation
+
+// var x = 7;
+
+// function getName(){
+//     console.log("Anbukkannan");
+// }
+
+// console.log(x);
+
+
+// let a=121
+// console.log();
+// let b = a.toString()
+// console.log(a.array());
+
+
+//ARRAY OF OBJECT
+// JS DSA 
+// ROADSIDE CODDER
+console.log(0.2 + 0.1 === 0.3);
+console.log(0.5 + 0.1 === 0.6);
