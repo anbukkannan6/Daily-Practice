@@ -570,5 +570,19 @@
 //ARRAY OF OBJECT
 // JS DSA 
 // ROADSIDE CODDER
-console.log(0.2 + 0.1 === 0.3);
-console.log(0.5 + 0.1 === 0.6);
+// console.log(0.2 + 0.1 === 0.3);
+// console.log(0.5 + 0.1 === 0.6);
+
+
+// let a = 22;
+// let b=a;
+// b=10
+// console.log(a);
+//TASK OF THE DAY---->DEEP COPY AND SHALLOW COPY
+// nnn
+// let a ={abc:34}
+// let b = a
+// b.abc=244
+// console.log(b);
+// console.log(a);
+
