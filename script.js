@@ -219,14 +219,14 @@
 // let newArray = []
 //  array10.forEach((val)=>{ 
 //     newArray.push(val)
-     
+
 // })
 // console.log(newArray);
 
 // let addition = 1
 
 // // array1.forEach((value)=>{
-    
+
 // //     addition = addition+value
 // // })
 // // console.log(addition);
@@ -396,7 +396,7 @@
 //         }
 //     }
 //     return output
-    
+
 // };
 // console.log(moveZeroes(nums))
 
@@ -438,19 +438,19 @@
 // let exist = (board,word)=>{
 //     let newArray = board.flat()
 
-    // console.log(newArray.indexOf("Z"));
-    // let finedWord =""
-    
-    // for(i=0;i<=word.length;i++){
-        
-    //     let index = newArray.indexOf(word[i])
-    //     // console.log(index);
-    //     if(index >=0){
-    //         finedWord = finedWord+word[i]
-            
-    //     }
-        
-        // let checked = newArray.find(word[i])
+// console.log(newArray.indexOf("Z"));
+// let finedWord =""
+
+// for(i=0;i<=word.length;i++){
+
+//     let index = newArray.indexOf(word[i])
+//     // console.log(index);
+//     if(index >=0){
+//         finedWord = finedWord+word[i]
+
+//     }
+
+// let checked = newArray.find(word[i])
 //     }
 //     console.log(finedWord)
 //     if(finedWord == word){
@@ -522,10 +522,10 @@
 //     let lastWord = split[split.length-1]
 //     console.log(lastWord);
 //     return lastWord.length
-     
+
 //  };
 // console.log(lengthOfLastWord(s));
- 
+
 
 // CONST Key Word in variables
 
@@ -585,4 +585,171 @@
 // b.abc=244
 // console.log(b);
 // console.log(a);
+
+
+//SPREAD OPERATOR---->Used for spread the array ok object as itratable
+
+// let newArr0 = [...arr0].push(10)
+// let newArr1 = arr0.push(10)
+// console.log(newArr0);
+// console.log(newArr0);
+// console.log(newArr1);
+// console.log(arr0);
+
+// ------------------------->'\mering the two arrays using spread oparator
+// let arr0 = [1, 2, 3, 4, 5]
+// let arr1 = ["anbu", "arun", "senthil", "vel"]
+
+// let newArr0 = [...arr0, ...arr1]
+// console.log(newArr0);
+
+//------------------------->Combining objects using spread oparator
+
+// const obj0 = { index: "NIFTY50", spot: 19700 }; //---->Every object has unique key 
+// const obj1 = { index: "BANKNIFTY", spot: 44665 };//--->If we combine the both object with same propertyName then it will overwrite the exixting key value pair
+
+// const newObj0 = { ...obj0, ...obj1 }
+// console.log(newObj0); //------>why shoud it not print combined value
+
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+// const combinedObj = { ...obj1, ...obj2 }; // Combines both objects
+// console.log(combinedObj);
+
+// ------------------------->FUNCTION Argument spreading
+// let arr = [1,2,3,4,5,6]
+// function status1(...arr){
+
+//     console.log(...arr);
+
+
+// }status1(arr)
+
+// const maxNum = Math.max(...arr); // Passes each element of the array as arguments
+// console.log(maxNum);
+
+// ------------------------->Creating shallow copy
+
+//Shallow copy only affected when the nested array 
+
+// let arr = ["NIFTY",["Tata","Reliance"],"SENSEX","BANKNIFTY","FINNIFTY"]
+// let newArr = [...arr];
+
+// arr[1][0]="HDFC"
+// console.log(newArr);
+// console.log(arr);
+
+
+//SHALLOW COPY IN OBJECTS
+
+// const obj0 = { index0: "NIFTY50", spot0: 19700 , stocks:{reliance:3400,tata:230}}; //---->Every object has unique key 
+// const obj1 = { index1: "BANKNIFTY", spot1: 44665 }
+
+// const newObj0 = {...obj0}
+
+// console.log(newObj0);
+
+// newObj0.stocks.reliance  = "FINNIFTY"
+// console.log(newObj0);
+// console.log(obj0);
+
+
+//REST OPERATORS------>This is used for combine multiple arugments in to an itratable array 
+
+// let arr = [1,2,3,4,5,6,8]
+
+// let [a,b, ...rest] = arr
+// console.log(a);
+// console.log(b);
+// console.log(rest);
+
+//JSON.stringify()-----To convert object data into JSON formet data
+
+// const obj0 = [{ index0: "NIFTY50", spot0: 19700 , stocks:{reliance:3400,tata:230}}];
+// console.log(obj0);
+
+// console.log("CONVERTED JSON DATA"+ JSON.stringify(obj0));
+// const parsed = JSON.parse(JSON.stringify(obj0))
+// console.log(parsed);
+
+
+//RECURSION
+
+// let array = [1,2,4,,5,7,8,9,10,33]
+
+// const arrar1 = array.forEach(element => {
+
+//     if(element == 33){
+//         return element;
+//     }
+//     return element;
+    
+    
+// });
+
+// console.log(arrar1);
+
+//MEMOIZATION ------>Memoization is an thechnique which can used for optimize the function more efficienty by built in feature closure
+
+// function memoizedFunction() {
+//     const cache = {};
+//     return function (n) {
+//       if (n in cache) {
+//         console.log('Fetching from cache');
+//         return cache[n];
+//       } else {
+//         console.log('Calculating result');
+//         const result = n * 2;
+//         cache[n] = result;
+//         return result;
+//       }
+//     };
+//   }
+  
+//   const memoized = memoizedFunction();
+//   console.log(memoized(5)); // Output: Calculating result, 10
+//   console.log(memoized(5)); // Output: Fetching from cache, 10
+
+  
+function outerFunction(){
+    const cache = {};
+    return function(e){
+        if(e in cache){
+            return cache[e]
+        }
+        else{
+            let result = e*2 ;
+            cache[e]=result;
+            return result;
+        }
+    }
+};
+
+const newFuction = outerFunction();
+
+console.log(newFuction(5));
+console.log(newFuction(5));
+
+
+let arr = [1,2,300,400,500,6,7,8]
+
+// function new1(){
+//     if (let n of arr){
+//         return 2;
+//     }
+
+// }
+// console.log(new1());
+
+
+// for( 8 in arr ){
+//     console.log(9000);
+// }
+
+const cache = {};
+cache[2] = 20
+cache[3] = 33
+console.log(cache);
+
+
 
