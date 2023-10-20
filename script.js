@@ -746,10 +746,12 @@ let arr = [1,2,300,400,500,6,7,8]
 //     console.log(9000);
 // }
 
-const cache = {};
-cache[2] = 20
-cache[3] = 33
-console.log(cache);
+// const cache = {};
+// cache[2] = 20
+// cache[3] = 33
+// console.log(cache);
+
+// RECURSION---------->The thing which is executed until the certain condition met
 
 
 
